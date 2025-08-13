@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="th">
-<head>
-    <title>เว็บไซต์ของ นายทูลเกล้า อินทรศรี</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <style>
+    <head>
+        <title>เว็บไซต์ของ นายทูลเกล้า อินทรศรี</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+            rel="stylesheet">
+        <style>
         body {
-            background-color: #78d4ff;
+            background-color: #33CCCC;
             font-family: Itim, sans-serif;
+            animation: color 9s infinite linear;
         }
         h1 {
             color: #fa3e3e;
@@ -62,46 +64,55 @@
             background-color: #00f2ff;
             /* สลับสีพื้นหลังของแถว เพื่อให้อ่านง่ายขึ้น */
         }
+        @keyframes color {
+        
+            0%   { background: #33CCCC; }
+            20%  { background: #33CC36; }
+            40%  { background: #B8CC33; }
+            60%  { background: #FCCA00; }
+            80%  { background: #33CC36; }
+            100% { background: #33CCCC; }
+        }
 
     </style>
-</head>
-<body>
-    <h1>หน้าแนะนำตัวของฉัน</h1>
+    </head>
+    <body>
+        <h1>หน้าแนะนำตัวของฉัน</h1>
 
-    <img src="myphoto.png" alt="รูปภาพของฉัน" width="200" height="200">
-    <p>สวัสดีครับนี่คือหน้าเว็บแนะนำตัวของฉัน</p>
+        <img src="myphoto.png" alt="รูปภาพของฉัน" width="200" height="200">
+        <p>สวัสดีครับนี่คือหน้าเว็บแนะนำตัวของฉัน</p>
 
-    <table border="1">
-        <thead>
-            <tr>
-                <th colspan="2">ข้อมูลส่วนตัว</th>
-            </tr>
-        </thead>
-        <tbody>
- 			<tr>
-                <td>รหัสประจำตัว</td>
-                <td>683380418-0</td>
-            </tr>
-            <tr>
-                <td>ชื่อ</td>
-                <td>นายทูลเกล้า อินทรศรี</td>
-            </tr>
-            <tr>
-                <td>อีเมล</td>
-                <td>thoolklao.i@kkumail.com</td>
-            </tr>
-            <tr>
-                <td>ความสนใจ</td>
-                <td>สนใจทำธุรกิจแบบ passive income</td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="rbox">
-        <button onclick="start_random()">กดเพื่อสุ่มตัวเลข 6 หลัก</button>
-        <div id="num" style="font-size: 50px;">------</div>
-    </div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="2">ข้อมูลส่วนตัว</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>รหัสประจำตัว</td>
+                    <td>683380418-0</td>
+                </tr>
+                <tr>
+                    <td>ชื่อ</td>
+                    <td>นายทูลเกล้า อินทรศรี</td>
+                </tr>
+                <tr>
+                    <td>อีเมล</td>
+                    <td>thoolklao.i@kkumail.com</td>
+                </tr>
+                <tr>
+                    <td>ความสนใจ</td>
+                    <td>สนใจทำธุรกิจแบบ passive income</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="rbox">
+            <button onclick="start_random()">กดเพื่อสุ่มตัวเลข 6 หลัก</button>
+            <div id="num" style="font-size: 50px;">------</div>
+        </div>
 
-    <script>
+        <script>
         let n = 0;
         let numElem = document.getElementById("num");
 
@@ -119,5 +130,5 @@
             }
         }
     </script>
-</body>
+    </body>
 </html>
