@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>เว็Rไซต์ของ [ใส่ชื่อของนักศึกษา]</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #d3e6f8;
+            font-family: Itim, sans-serif;
+        }
+        h1 {
+            color: #fa3e3e;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+            /* กำหนดความกว้างของรูปภาพ */
+            height: 200px;
+            /* กำหนดความสูงของรูปภาพ */
+            border: 10px solid #ff0000;
+            /* เพิ่มขอบสีฟ้าทึบขนาด 5px */
+            border-radius: 50%;
+            /* ทำให้รูปภาพเป็นวงกลม */
+            box-shadow: 0 4px 8px rgb(255, 0, 0);
+            /* เพิ่มเงาให้รูปภาพ */
+            display: block;
+            /* จัดให้รูปภาพอยู่คนละบรรทัดกับข้อความ */
+            margin: 20px auto;
+            /* จัดให้อยู่กึ่งกลางหน้าเว็บ */
+        }
+
+        table {
+            width: 80%;
+            /* กำหนดความกว้างของตาราง */
+            border-collapse: collapse;
+            /* รวมเส้นขอบของเซลล์ให้เป็นเส้นเดียว */
+            margin: 20px auto;
+            /* จัดให้อยู่กึ่งกลางหน้าเว็บ */
+            background-color: #00fca8;
+        }
+        th, td {
+            border: 1px solid #0400ff;
+            /* เพิ่มเส้นขอบเซลล์ */
+            padding: 12px;
+            /* เพิ่มระยะห่างภายในเซลล์ */
+        }
+        th {
+            background-color:   #ff0000;
+            /* สีพื้นหลังของหัวตาราง */
+            color: rgb(0, 255, 42);
+            /* สีตัวอักษรของหัวตาราง */
+        }
+        tr:nth-child(even) {
+            background-color: #00f2ff;
+            /* สลับสีพื้นหลังของแถว เพื่อให้อ่านง่ายขึ้น */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>หน้าแนะนำตัวของฉัน</h1>
+
+    <img src="myphoto.png" alt="รูปภาพของฉัน" width="200" height="200">
+    <p>สวัสดีครับนี่คือหน้าเว็บแนะนำตัวของฉัน</p>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">ข้อมูลส่วนตัว</th>
+            </tr>
+        </thead>
+        <tbody>
+ 			<tr>
+                <td>รหัสประจำตัว</td>
+                <td>683380418-0</td>
+            </tr>
+            <tr>
+                <td>ชื่อ</td>
+                <td>นายทูลเกล้า อินทรศรี</td>
+            </tr>
+            <tr>
+                <td>อีเมล</td>
+                <td>thoolklao.i@kkumail.com</td>
+            </tr>
+            <tr>
+                <td>ความสนใจ</td>
+                <td>สนใจทำธุรกิจแบบ passive income</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
